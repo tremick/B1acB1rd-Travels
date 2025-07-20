@@ -166,22 +166,24 @@
             <p class="contact-detail"><i class="ph-fill ph-envelope-simple"></i><strong>Email:</strong> b1acb1rdtravels@gmail.com</p>
             <p class="contact-detail"><i class="ph-fill ph-phone"></i><strong>Phone:</strong> +2349037222983</p>
           </div>
-          <form class="contact-form animate-on-scroll" aria-labelledby="contact-form-heading">
-            <h3 id="contact-form-heading" class="sr-only">Contact Form</h3>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message <i class="ph ph-paper-plane-tilt"></i></button>
-          </form>
+          <form name="contact" method="POST" data-netlify="true" aria-labelledby="contact-form-heading">
+  <input type="hidden" name="form-name" value="contact" />
+  <h3 id="contact-form-heading" class="sr-only">Contact Form</h3>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required />
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Send Message <i class="ph ph-paper-plane-tilt"></i></button>
+</form>
+
         </div>
       </div>
     </section>
